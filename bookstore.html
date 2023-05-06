@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>PANTALLA PRINCIPAL</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" 
+		rel="stylesheet">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		 crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="bookstore.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="Shortcut Icon" type="image/x-icon" href="assets/icons/book.ico" />
+		<script src="js/sweet-alert.min.js"></script>
+		<link rel="stylesheet" href="css/sweet-alert.css">
+		<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/main.js"></script>
+
+		
+	</head>
+		<body>
+		<header>			
+			<h1 class="tileBookStore">Book-Store</h1>
+			<h1 id="usuario">vacio</h1>			
+			<!-- Deseos -->
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 
+							1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0
+							 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0
+							  11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+					
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">No ha agregado nada</p>
+				</div>
+			</div>
+			</header>		
+				
+			<div class="container-items">
+
+			<div class="card" >
+				<div class="card_landing" style="--i:url(img/boulevard.png)">
+					<h6 >Boulevard</h6>
+				</div>
+				<div class="card_info">
+					<div class="head">
+						<h2 class="title" class="price" >Titulo: Boulevard </h2>
+					</div>
+					
+					<div >
+						<div class="info-product">
+							<h2 class="price" >Autor:FLOR SALVADOR</h2>
+							<ul class="info">
+							<li>Año: 2014</li>
+							<li>Genero: Drama</li>
+							<li>Editorial: Editorial Naranja</li>
+							<li>Cantidad en Stock:</li> <!--FALTA ARREGLAR -->
+							<li>Descripcion:  Luke Howland ha dedicado gran parte de su vida viviendo bajo las sombras de sus recuerdos. Cuando él cree estar en el borde de su vida con sus sueños rotos, Hasley Weigel aparece en ella para ser aquel cajón de esperanzas que él tanto necesitaba.</li>
+							</li></ul>
+							<button class="btn-add-cart">Agregar en intereses</button>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+
+			<div class="card" >
+				<div class="card_landing" style="--i:url(img/ElPoderDeTuMente.png)">
+					<h6>El poder de tu mente subconsciente</h6>
+				</div>
+				<div class="card_info">
+					<div class="head">
+					<p class="title" class="price">Titulo: El poder de tu mente subconsciente </p>
+					<div class="description">
+					</div>
+					</div>
+					<div >
+					
+					<div class="info-product">
+						<h2 class="price">Autor: Joseph Murphy</h2>
+						<ul class="info">
+						<li>fecha publicacion: 29 Septiembre 2009 </li>
+						<li>Genero: Autoayuda</li>
+						<li>Editorial: Arkano books</li>
+						<li>Cantidad en Stock: </li> <!--FALTA ARREGLAR -->
+						<li>Descripcion: La vida es muy ajetreada. Tiene El poder de su mente subconsciente ¿ha estado acumulando polvo en su estantería? En lugar de ello, recoja ahora las ideas clave.
+						</li></ul>
+						<button class="btn-add-cart">Agregar en intereses</button>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" >
+				<div class="card_landing" style="--i:url(img/romperElCirculo.jfif)">
+					<h6>Romper el circulo</h6>
+				</div>
+				<div class="card_info">
+					<div class="head">
+						<p class="title" class="price">Titulo: Romper el circulo</p>	
+					</div>
+					<div>
+						<div class="info-product">
+							<h2 class="price">Autor: Colleen Hoover</h2>
+							<ul class="info">
+							<li>fecha: 28 de junio 2022 </li>
+							<li>Genero: Novela rosa </li>
+							<li>Editorial: Planeta Internaconal </li>
+							<li>Cantidad en Stock: </li> <!--FALTA ARREGLAR -->
+							<li>Descripcion:  A veces, quien más te quiere es quién más daño te hace. Lily no siempre lo ha tenido fácil. Por eso, su idílica relación con un magnífico neurocirujano llamado Ryle Kincaid, parece demasiado buena para ser verdad. Cuando Atlas, su primer amor, reaparece repentinamente y Ryle comienza a mostrar su verdadera cara, todo lo que Lily ha construido con él se ve amenazado.
+							</li></ul>
+							<button class="btn-add-cart">Agregar en intereses</button>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+
+			<div class="card" >
+				<div class="card_landing" style="--i:url(img/cumbresBorrascosas.jfif)">
+					<h6>Cumbres Borrascosas</h6>
+				</div>
+				<div class="card_info">
+					<div class="head">
+						<p class="title" class="price">Titulo: cumbres Borrascosas</p>	
+					</div>
+					<div>
+						<div class="info-product">
+							<h2 class="price">Autor: Emily Bronte</h2>
+							<ul class="info">
+							<li>fecha: diciembre de 1847</li>
+							<li>Genero: Novela, tragedia</li>
+							<li>Editorial: adaptada </li>
+							<li>Cantidad en Stock: </li> <!--FALTA ARREGLAR -->
+							<li>Descripcion:  El argumento de la novela gira en torno a las pasiones, el desprecio y la venganza. Adoptado por la familia Earnshaw, el niño Heathcliff sufre el desprecio de familiares, criados y vecinos. Además, padece el rechazo de Catherine, quien a pesar de corresponderle, opta por un matrimonio a conveniencia. Entonces, Heathcliff trama su venganza.
+							</li></ul>
+							<button class="btn-add-cart">Agregar en intereses</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" >
+				<div class="card_landing" style="--i:url(img/despuesDelMinuto8.jpg)">
+					<h6>Despues del minuto 8</h6>
+				</div>
+				<div class="card_info">
+					<div class="head">
+						<p class="title" class="price">Titulo: Despues del minuto 8</p>	
+					</div>
+					<div>
+						<div class="info-product">
+							<h2 class="price">Autor: Sol Iannaci</h2>
+							<ul class="info">
+							<li>fecha: 30 de marzo de 2022 </li>
+							<li>Genero: Ficcion Literaria </li>
+							<li>Editorial: Hojas del Sur</li>
+							<li>Cantidad en Stock: </li> <!--FALTA ARREGLAR -->
+							<li>Descripcion:  Después del minuto ocho es una novela sobre crecer, sobre lidiar con lo más difícil, sobre apoyarse en la familia que vamos haciendo en el camino para salir de fondo del pozo. Resiliencia, coraje y juventud: reinventarse para vivir las vidas nuevas que tenemos por delante.
+							</li></ul>
+							<button class="btn-add-cart">Agregar en intereses</button>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+
+			<div class="card" >
+				<div class="card_landing" style="--i:url(img/LaChicaDelTren.jfif)">
+					<h6>La Chica del Tren</h6>
+				</div>
+				<div class="card_info">
+					<div class="head">
+						<p class="title" class="price">Titulo: La Chica del Tren</p>	
+					</div>
+					<div>
+						<div class="info-product">
+							<h2 class="price">Autor: Paula Hawkins</h2>
+							<ul class="info">
+							<li>fecha: 6 de enero de 2015 </li>
+							<li>Genero: Novela, Misterio </li>
+							<li>Editorial: Planeta </li>
+							<li>Cantidad en Stock: </li> <!--FALTA ARREGLAR -->
+							<li>Descripcion:  Rachel toma siempre el tren de las 8.04 h. Cada mañana lo mismo. Son solo unos segundos, pero le permiten observar a una pareja desayunando tranquilamente en su terraza. Siente que los conoce y se inventa unos nombres para ellos. Su vida es perfecta, no como la suya. Pero un día ve algo. Sucede muy deprisa, pero es suficiente. ¿Y si ellos no son tan felices como ella cree?. Tú no la conoces. Ella a ti, sí.
+							</li></ul>
+							<button class="btn-add-cart">Agregar en intereses</button>
+						</div>
+					</div>		
+				</div>			
+			</div>
+			</div>
+			
+			<div class="principal">
+				<div class="wrap">
+					<form class="formulario" action="">
+						<h1>Lecturas pendientes</h1>
+						<h2>Aqui tienes un generador de lecturas para que puedas tacharlas cuando ya las hayas leido</h2>
+						<input type="text" id="tareaInput" placeholder="Escribe el nombre del libro">
+						<input type="button" class="boton" id="btn-agregar" value="Agregar libro a pendientes de lectura">
+					</form>
+				</div>
+			</div>
+		
+			<div class="tareas">
+				<div class="wrap">
+					<ul class="lista" id="lista" class="strike">
+						
+					</ul>
+				</div>
+			</div>	
+			<script src="bookstore.js"></script>
+			<script>document.getElementById('usuario').innerHTML = localStorage.usuario; </script>
+	</body>
+</html>
